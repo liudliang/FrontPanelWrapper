@@ -8,7 +8,7 @@
 2. Automatically selects the appropriate FrontPanel APIs based on the bus type (USB 2.0/USB 3.0/PCI).
 3. Burn a bitfile to the FPGA as soon as we open a connection to it.
 4. Sensible error messages. **:-)**
-5. Semiautomatic PLL-handling for quick and easy deployment.
+5. Semi-automatic PLL handling for quick and easy deployment.
 
 ### Usage
 * This library easy to use so long as FrontPanel is already installed on your system! Simply include the include the source code (.h, .cpp files) and use it in your code.
