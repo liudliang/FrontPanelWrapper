@@ -1,5 +1,5 @@
 # FrontPanelBroker
-#### A simple I/O arbiter and board manager for the OpalKelly FrontPanel® FPGA-USB/PCI communication driver written in C++.
+## A simple I/O arbiter and board manager for the OpalKelly FrontPanel® FPGA-USB/PCI communication driver written in C++.
 
 
 ### Features
