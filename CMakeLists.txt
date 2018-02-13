@@ -15,6 +15,6 @@ LINK_DIRECTORIES(FrontPanel/ubuntu16.04/API)
 # add_library(FrontPanelWrapper SHARED)
 
 # Create an execuatable to test FrontPanelBroker
-include_directories(${HEADERS})
+#include_directories(${HEADERS})
 add_executable(FrontPanelWrapper testMain.cpp ${SOURCES})
 TARGET_LINK_LIBRARIES(FrontPanelWrapper libokFrontPanel.so)
