@@ -120,13 +120,165 @@ int fpErrorParser(okCFrontPanel::ErrorCode fp_ErrorCode, std::string userMSG) {
     return fpErrorParser(fp_ErrorCode);
 }
 
+
+std::string fpBoardParser(okCFrontPanel::BoardModel fp_ModelCode) {
+    using namespace std;
+    string boardName;
+    switch(fp_ModelCode) {
+        case okCFrontPanel::BoardModel::brdUnknown : // 0
+            boardName = "Board unknown";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM3001v1 : // 1
+            boardName = "XEM3001v1";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM3001v2 : // 2
+            boardName = "XEM3001v2";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM3010 : // 3
+            boardName = "XEM3010";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM3005 : // 4
+            boardName = "XEM3005";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM3001CL : // 5
+            boardName = "XEM3001CL";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM3020 : // 6
+            boardName = "XEM3020";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM3050 : // 7
+            boardName = "XEM3050";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM9002 : // 8
+            boardName = "XEM9002";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM3001RB : // 9
+            boardName = "XEM3001RB";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM5010 : // 10
+            boardName = "XEM5010";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6110LX45 : // 11
+            boardName = "XEM6110-LX45";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6110LX150 : // 15
+            boardName = "XEM6110-LX150";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6001 : // 12
+            boardName = "XEM6001";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6010LX45 : // 13
+            boardName = "XEM6010-LX45";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6010LX150 : // 14
+            boardName = "XEM6010-LX150";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6006LX9 : // 16
+            boardName = "XEM6006-LX9";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6006LX16 : // 17
+            boardName = "XEM6006-LX16";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6006LX25 : // 18
+            boardName = "XEM6006-LX25";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM5010LX110 : // 19
+            boardName = "XEM5010-LX110";
+            break;
+        case okCFrontPanel::BoardModel::brdZEM4310 : // 20
+            boardName = "ZEM4310";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6310LX45 : // 21
+            boardName = "XEM6310-LX45";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6310LX150 : // 22
+            boardName = "XEM6310-LX150";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6110v2LX45 : // 23
+            boardName = "XEM6110v2-LX45";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6110v2LX150 : // 24
+            boardName = "XEM6110v2-LX150";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6002LX9 : // 25
+            boardName = "XEM6002-LX9";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6310MTLX45T : // 26
+            boardName = "XEM6310MT-LX45T";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6320LX130T : // 27
+            boardName = "XEM6320-LX130T";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7350K70T : // 28
+            boardName = "XEM7350-K70T";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7350K160T : // 29
+            boardName = "XEM7350-K160T";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7350K410T : // 30
+            boardName = "XEM7350-K410T";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM6310MTLX150T : // 31
+            boardName = "XEM6310MT-LX150T";
+            break;
+        case okCFrontPanel::BoardModel::brdZEM5305A2 : // 32
+            boardName = "ZEM5305-A2";
+            break;
+        case okCFrontPanel::BoardModel::brdZEM5305A7 : // 33
+            boardName = "ZEM5305-A7";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7001A15 : // 34
+            boardName = "XEM7001-A15";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7001A35 : // 35
+            boardName = "XEM7001-A35";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7360K160T : // 36
+            boardName = "XEM7360-K160T";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7360K410T : // 37
+            boardName = "XEM7360-K410T";
+            break;
+        case okCFrontPanel::BoardModel::brdZEM5310A4 : // 38
+            boardName = "ZEM5310-A4";
+            break;
+        case okCFrontPanel::BoardModel::brdZEM5310A7 : // 39
+            boardName = "ZEM5310-A7";
+            break;
+        case okCFrontPanel::BoardModel::brdZEM5370A5 : // 40
+            boardName = "ZEM5370-A5";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7010A50 : // 41
+            boardName = "XEM7010-A50";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7010A200 : // 42
+            boardName = "XEM7010-A200";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7310A75 : // 43
+            boardName = "XEM7310-A75";
+            break;
+        case okCFrontPanel::BoardModel::brdXEM7310A200 : // 44
+            boardName = "XEM7310-A200";
+            break;
+        default:
+            boardName = "Board code unknown";
+            cerr<<"FrontPanelWrapper: WARNING: Board code is unknown...\n";
+            break;
+    }
+
+    return boardName;
+}
+
 int fpEnumerate() {
     okCFrontPanel dev;
     int devCount = dev.GetDeviceCount();
+    okCFrontPanel::BoardModel boardCode;
     for (int i = 0; i<devCount; i++) {
-        std::cout << "Device [" << i << "]: Model: " << dev.GetDeviceListModel(i) << "(Serial: " << dev.GetDeviceListSerial(i) << ")\n";
+        boardCode = dev.GetDeviceListModel(i);
+        std::cout << "Device " << i << ": " << fpBoardParser(boardCode) << " [Board code: " << boardCode << " , Serial: " << dev.GetDeviceListSerial(i) << "]\n";
     }
     return devCount;
 }
+
 
 
