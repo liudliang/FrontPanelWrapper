@@ -9,8 +9,11 @@
 #include <okFrontPanelDLL.h>
 
 int fpLibraryCheck();
-int fpErrorParser(ok_ErrorCode fp_ErrorCode);
-int fpErrorParser(ok_ErrorCode fp_ErrorCode, std::string userMSG);
+int fpErrorParser(okCFrontPanel::ErrorCode fp_ErrorCode);
+int fpErrorParser(okCFrontPanel::ErrorCode fp_ErrorCode, std::string userMSG);
+std::string fpBoardParser(okCFrontPanel::BoardModel fp_ModelCode);
+int fpEnumerate();
+
 
 class FrontPanelWrapper {
 private:
